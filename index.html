@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>IronPulse Fitness | Gym in Vijayawada</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;800&family=Barlow:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div class="wrap bar">
+    <a class="logo" href="#home">Iron<span>Pulse</span></a>
+    <button class="menu" id="menu" aria-expanded="false" aria-controls="nav">Menu</button>
+    <nav id="nav" aria-label="Main">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#trainers">Trainers</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+<div class="hero" id="home">
+  <div class="wrap">
+    <div>
+      <h1>Show up. Lift. Repeat.</h1>
+      <p>IronPulse is a neighbourhood gym with free weights, group classes and coaches who learn your name. Book a free trial week and see what a steady routine does for you.</p>
+      <a class="btn" href="#contact">Book a free trial</a>
+    </div>
+    <div class="today" aria-live="polite">
+      <h2 id="todayTitle">Today at IronPulse</h2>
+      <small id="todayNote"></small>
+      <ul id="todayList"></ul>
+    </div>
+  </div>
+</div>
+
+<section id="services">
+  <div class="wrap">
+    <h2 class="t">Services</h2>
+    <p class="lead">Pick one, or mix them. Every plan includes a starter assessment and a written program.</p>
+    <div class="services">
+      <div class="svc"><h3>Strength training</h3><span class="price">₹1,200/mo</span><p>Free weights, racks and machines with a coach on the floor.</p></div>
+      <div class="svc"><h3>Personal training</h3><span class="price">₹3,500/mo</span><p>One-to-one sessions built around your goal and schedule.</p></div>
+      <div class="svc"><h3>HIIT classes</h3><span class="price">₹1,500/mo</span><p>45-minute interval sessions that burn fat and build stamina.</p></div>
+      <div class="svc"><h3>Yoga and mobility</h3><span class="price">₹1,000/mo</span><p>Morning classes for flexibility, posture and recovery.</p></div>
+      <div class="svc"><h3>Weight-loss program</h3><span class="price">₹2,400/mo</span><p>Training plus a simple meal plan and weekly check-ins.</p></div>
+      <div class="svc"><h3>Cardio zone</h3><span class="price">₹800/mo</span><p>Treadmills, cycles and rowers, open from 5 am to 10 pm.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="trainers" class="band">
+  <div class="wrap">
+    <h2 class="t">Trainers</h2>
+    <p class="lead">Certified coaches who plan your sessions and watch your form.</p>
+    <div class="trainers">
+      <div class="trainer"><div class="avatar" aria-hidden="true">RK</div><div><h3>Ravi Kumar</h3><p class="role">Head strength coach</p><p>8 years coaching powerlifting and muscle gain.</p></div></div>
+      <div class="trainer"><div class="avatar" aria-hidden="true">SP</div><div><h3>Sneha Patel</h3><p class="role">HIIT and weight loss</p><p>Runs our fat-loss program and morning HIIT classes.</p></div></div>
+      <div class="trainer"><div class="avatar" aria-hidden="true">AN</div><div><h3>Arjun Nair</h3><p class="role">Yoga and mobility</p><p>Certified yoga instructor focused on posture and injury recovery.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap contact">
+    <div class="info">
+      <h2 class="t">Contact</h2>
+      <p class="lead">Send a message and we'll call you back within a day.</p>
+      <p><b>Address</b>12 Benz Circle Road, Vijayawada, Andhra Pradesh</p>
+      <p><b>Hours</b>Monday to Saturday, 5 am to 10 pm. Sunday, 6 am to 12 pm.</p>
+      <p><b>Phone</b>+91 90000 00000</p>
+    </div>
+    <div>
+      <form id="form" novalidate>
+        <label for="name">Name<input id="name" name="name" autocomplete="name"><span class="err" id="e-name"></span></label>
+        <label for="email">Email<input id="email" name="email" type="email" autocomplete="email"><span class="err" id="e-email"></span></label>
+        <label for="plan">Interested in
+          <select id="plan"><option>Strength training</option><option>Personal training</option><option>HIIT classes</option><option>Yoga and mobility</option><option>Weight-loss program</option></select>
+        </label>
+        <label for="msg">Message<textarea id="msg" name="msg"></textarea><span class="err" id="e-msg"></span></label>
+        <button class="btn" type="submit">Send message</button>
+      </form>
+      <div class="ok" id="ok" role="status"></div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer><div class="wrap">© <span id="yr"></span> IronPulse Fitness. A front-end demo project built with HTML, CSS and JavaScript.</div></footer>
+
+<script src="script.js"></script>
+</body>
+</html>
